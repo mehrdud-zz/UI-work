@@ -2,56 +2,56 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 
 
-<script language="javascript" type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style
+<script language="javascript" type="text/javascript" src="http://YOURSHAREPOINTSITE/Style
 
 %20Library/Pages/InventoryTreeMap/jquery.corner.js"></script>
 
 
-<script language="javascript" type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style%20Library/Pages/InventoryTreeMap/jit-
+<script language="javascript" type="text/javascript" src="http://YOURSHAREPOINTSITE/Style%20Library/Pages/InventoryTreeMap/jit-
 
 yc.js"></script>
-<script language="javascript" type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style
+<script language="javascript" type="text/javascript" src="http://YOURSHAREPOINTSITE/Style
 
-%20Library/Pages/InventoryTreeMap/CFTController.js"></script>
-<script language="javascript" type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style
+%20Library/Pages/InventoryTreeMap/MYController.js"></script>
+<script language="javascript" type="text/javascript" src="http://YOURSHAREPOINTSITE/Style
 
 %20Library/Pages/InventoryTreeMap/DataModel.js"></script>
-<script language="javascript" type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style
+<script language="javascript" type="text/javascript" src="http://YOURSHAREPOINTSITE/Style
 
 %20Library/Pages/InventoryTreeMap/TreeMap.js"></script>
 
-<script language="javascript" type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style
+<script language="javascript" type="text/javascript" src="http://YOURSHAREPOINTSITE/Style
 
 %20Library/Pages/InventoryTreeMap/InventoryTreeMap.js"></script>
 
-<!--[if IE]><script type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style%20Library/Pages/InventoryTreeMap/excanvas.js"></script><!
+<!--[if IE]><script type="text/javascript" src="http://YOURSHAREPOINTSITE/Style%20Library/Pages/InventoryTreeMap/excanvas.js"></script><!
 
 [endif]-->
 
-<script language="javascript" type="text/javascript" src="http://gblon-i-dw38/sites/testsite4/Style
+<script language="javascript" type="text/javascript" src="http://YOURSHAREPOINTSITE/Style
 
 %20Library/Common/KendoUI/js/kendo.web.min.js"></script>
 
 
-<link rel="stylesheet" type="text/css" href="http://gblon-i-dw38/sites/testsite4/Style%20Library/Pages/InventoryTreeMap/base.css" />
-<link rel="stylesheet" type="text/css" href="http://gblon-i-dw38/sites/testsite4/Style%20Library/Pages/InventoryTreeMap/Treemap.css" />
+<link rel="stylesheet" type="text/css" href="http://YOURSHAREPOINTSITE/Style%20Library/Pages/InventoryTreeMap/base.css" />
+<link rel="stylesheet" type="text/css" href="http://YOURSHAREPOINTSITE/Style%20Library/Pages/InventoryTreeMap/Treemap.css" />
 
 
-<link rel="stylesheet" type="text/css" href="http://gblon-i-dw38/sites/testsite4/Style%20Library/Common/KendoUI/Styles/kendo.default.min.css" />
-<link rel="stylesheet" type="text/css" href="http://gblon-i-dw38/sites/testsite4/Style%20Library/Common/KendoUI/Styles/kendo.common.min.css" />
+<link rel="stylesheet" type="text/css" href="http://YOURSHAREPOINTSITE/Style%20Library/Common/KendoUI/Styles/kendo.default.min.css" />
+<link rel="stylesheet" type="text/css" href="http://YOURSHAREPOINTSITE/Style%20Library/Common/KendoUI/Styles/kendo.common.min.css" />
 
 
 <script id="solutionKendoTemplate" type="text/x-kendo-template">
 	 
-        # for (var i = 0; i < CFTSolutions.length; i++) { #		
+        # for (var i = 0; i < MYSolutions.length; i++) { #		
         <li>		
 			<div 
 				class="solution"
 				onclick="javascript:showDetail(this);" 
-				solutionid="#= CFTSolutions[i].id #"  
-				solutionName="#= CFTSolutions[i].name #"> 			
-					<div  id="solutionTitle#= i #" class="solutionNameDiv">#= CFTSolutions[i].name #</div>
-					<div  id="solutionDescription#= i #" class="solutionDescriptionDiv result-item more" >#= CFTSolutions
+				solutionid="#= MYSolutions[i].id #"  
+				solutionName="#= MYSolutions[i].name #"> 			
+					<div  id="solutionTitle#= i #" class="solutionNameDiv">#= MYSolutions[i].name #</div>
+					<div  id="solutionDescription#= i #" class="solutionDescriptionDiv result-item more" >#= MYSolutions
 
 [i].data.SolutionType #</div>		 
 			</div>
@@ -80,7 +80,7 @@ yc.js"></script>
 			<div style="float: right; margin-top: 8px; margin-right: 12px; z-index:2999;">
 				<a href="javascript:void(SP.UI.ModalDialog.showModalDialog({title: 'Edit #= data.Title #', width: 720, url: 
 
-'../Lists/CFTInventory/EditForm.aspx?ID=#= data.ID #&IsDlg=true', dialogReturnValueCallback: function(e) { refreshDetail(e, #= data.ID #) 
+'../Lists/MYInventory/EditForm.aspx?ID=#= data.ID #&IsDlg=true', dialogReturnValueCallback: function(e) { refreshDetail(e, #= data.ID #) 
 
 }}))">Edit</a>				
 				&nbsp;
@@ -99,7 +99,7 @@ yc.js"></script>
 					</li>
 				</ul>
 				<div>
-					<table cellpadding="0" cellspacing="0" class="CFTSolutionDetail">
+					<table cellpadding="0" cellspacing="0" class="MYSolutionDetail">
 						<tr>
 							<td class="row-heading">Name:</td>
 							<td class="row-detail"><a href="#= data.URL #" title="#= data.Name1 #">#= data.Name1 
@@ -273,7 +273,7 @@ yc.js"></script>
 <br />
 
 
-<table id="CFTInventory">
+<table id="MYInventory">
     <tr>
         <td valign="top" align="left" style="width: 73%;">   
 		<div id="solutionDetail"></div>
